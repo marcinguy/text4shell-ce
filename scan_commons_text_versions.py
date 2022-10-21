@@ -212,17 +212,17 @@ if __name__ == "__main__":
 
     root_dir, exclude_dirs, silent_mode = parse_command_line()
 
-    for dir_to_check in exclude_dirs:
-        if not os.path.isdir(dir_to_check):
-            print(dir_to_check + " is not a directory")
-            print_usage()
-    if not os.path.isdir(root_dir) and not (
-        os.path.isfile(root_dir) and acceptable_filename(root_dir)
-    ):
-        print(root_dir + " is not a directory or an archive")
-        print_usage()
-
-    if exclude_dirs:
-        print("Excluded: " + ", ".join(exclude_dirs))
+    #for dir_to_check in exclude_dirs:
+    #    if not os.path.isdir(dir_to_check):
+    #        print(dir_to_check + " is not a directory")
+    #        print_usage()
+    #if not os.path.isdir(root_dir) and not (
+    #    os.path.isfile(root_dir) and acceptable_filename(root_dir)
+    #):
+    #    print(root_dir + " is not a directory or an archive")
+    #    print_usage()
+    #
+    #if exclude_dirs:
+    #    print("Excluded: " + ", ".join(exclude_dirs))
 
     run_scanner(root_dir, set(exclude_dirs), silent_mode)
