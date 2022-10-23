@@ -59,10 +59,10 @@ def confusion_message(filename: str, classname: str):
 
 def version_message(filename: str, diagnosis: Diag):
     messages = {
-        Status.FIX: "fixed",
-        Status.VULN: "vulnerable",
-        Status.PARTIAL: "mitigated",
-        Status.INCONSISTENT: "inconsistent",
+        Status.FIX: "Text4shell fixed",
+        Status.VULN: "Text4shell vulnerable",
+        Status.PARTIAL: "Text4shell mitigated",
+        Status.INCONSISTENT: "Text4shell inconsistent",
     }
     msg = messages[diagnosis.status] + " " + diagnosis.note
     print(json.dumps({"I001":msg}))
