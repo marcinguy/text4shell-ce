@@ -1,3 +1,7 @@
+# This is a part of the original code from Project text4shell-tools
+# Modified by Marcin Kozlowski on 21/10/2022
+
+
 #!/usr/bin/python3
 
 import json
